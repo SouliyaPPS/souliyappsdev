@@ -1,14 +1,13 @@
 module.exports = {
   // where it all starts -- the site's root Notion page (required)
-  rootNotionPageId: 'bb26e67234254ca1be61d65a8a82a0d4',
-
+  rootNotionPageId: '4d1689680be74b6f96071c8dda16db9e',
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: null,
 
   // basic site info (required)
   name: 'ຄຳສອນພຣະພຸດທະເຈົ້າ',
-  domain: 'transitivebullsh.it',
+  domain: 'https://buddhaword.notion.site/4d1689680be74b6f96071c8dda16db9e',
   author: 'ຄຳສອນພຣະພຸດທະເຈົ້າ',
 
   // open graph metadata (optional)
