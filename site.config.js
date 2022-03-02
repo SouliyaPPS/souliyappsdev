@@ -1,13 +1,13 @@
 module.exports = {
   // where it all starts -- the site's root Notion page (required)
-  rootNotionPageId: 'aade96cb327d4fb0a241d62d7ca738ef',
+  rootNotionPageId: 'fe3a8b223e66422fabcead3c0f766529',
   // if you want to restrict pages to a single notion workspace (optional)
   // (this should be a Notion ID; see the docs for how to extract this)
   rootNotionSpaceId: 'secret_ydgtW0VcPntUR2fEklsRwJHF0dN33V4W9dO3Ap6qoLa',
 
   // basic site info (required)
   name: 'ຄຳສອນພຣະພຸດທະເຈົ້າ',
-  domain: 'https://buddhaword.notion.site/aade96cb327d4fb0a241d62d7ca738ef',
+  domain: 'https://buddhaword.notion.site/fe3a8b223e66422fabcead3c0f766529',
   author: 'ຄຳສອນພຣະພຸດທະເຈົ້າ',
 
   // open graph metadata (optional)
