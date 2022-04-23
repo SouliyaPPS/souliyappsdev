@@ -9,7 +9,7 @@ module.exports = {
   name: 'souliyappsdev',
   domain:
     'https://souliyappsdev.notion.site/Mr-Souliya-Phoupaseuth-17f642a14e384b58af776375ba75b9aa',
-  author: 'souliyappsdev',
+  author: 'SouliyaPPS',
 
   // open graph metadata (optional)
   description: 'souliyappsdev',
