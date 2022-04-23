@@ -20,6 +20,7 @@ import { mapPageUrl, getCanonicalPageUrl } from 'lib/map-page-url'
 import { mapNotionImageUrl } from 'lib/map-image-url'
 import { getPageDescription } from 'lib/get-page-description'
 import { getPageTweet } from 'lib/get-page-tweet'
+import { searchNotion } from 'lib/search-notion'
 import * as types from 'lib/types'
 import * as config from 'lib/config'
 
@@ -27,8 +28,9 @@ import * as config from 'lib/config'
 import { CustomFont } from './CustomFont'
 import { Loading } from './Loading'
 import { Page404 } from './Page404'
-// import { PageHead } from './PageHead'
+import { PageHead } from './PageHead'
 import { PageActions } from './PageActions'
+import { Footer } from './Footer'
 // import { PageSocial } from './PageSocial'
 // import { GitHubShareButton } from './GitHubShareButton'
 import { ReactUtterances } from './ReactUtterances'
@@ -171,14 +173,14 @@ export const NotionPage: React.FC<types.PageProps> = ({
         }
       }}
     >
-      {/* <PageHead site={site} /> */}
+      <PageHead site={site} />
 
       <Head>
-        {/* <meta property='og:title' content={title} />
+        <meta property='og:title' content={title} />
         <meta property='og:site_name' content={site.name} />
 
         <meta name='twitter:title' content={title} />
-        <meta property='twitter:domain' content={site.domain} /> */}
+        <meta property='twitter:domain' content={site.domain} />
 
         {config.twitter && (
           <meta name='twitter:creator' content={`@${config.twitter}`} />
@@ -210,7 +212,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
           </>
         )}
 
-        {/* <title>{title}</title> */}
+        <title>{title}</title>
       </Head>
 
       <CustomFont site={site} />
@@ -267,9 +269,18 @@ export const NotionPage: React.FC<types.PageProps> = ({
         defaultPageCoverPosition={config.defaultPageCoverPosition}
         mapPageUrl={siteMapPageUrl}
         mapImageUrl={mapNotionImageUrl}
+        searchNotion={searchNotion}
         pageFooter={comments}
         pageAside={pageAside}
+        footer={
+          <Footer
+            isDarkMode={darkMode.value}
+            toggleDarkMode={darkMode.toggle}
+          />
+        }
       />
+
+      {/* <GitHubShareButton /> */}
     </TwitterContextProvider>
   )
 }
